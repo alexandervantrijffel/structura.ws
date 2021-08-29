@@ -1,7 +1,5 @@
-/* Example with @emotion/react */
 import tw from 'twin.macro'
 
-//"react native style"
 const styles = {
   button: tw`
     relative
@@ -20,9 +18,8 @@ const styles = {
   `,
 }
 
-const ButtonReact = ({ children, ...props }) => (
-  <button {...props} css={styles.button}>
-    {/* inline style*/}
+const ButtonReact = ({ children, ...props }): JSX.Element => (
+  <button type="button" {...props} css={styles.button}>
     <span css={tw`absolute left-0 inset-y-0 flex items-center pl-3`}>
       <svg
         css={tw`h-5 w-5 text-gray-500 group-hover:text-gray-400 transition ease-in-out duration-150`}

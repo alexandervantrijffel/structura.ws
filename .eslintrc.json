@@ -1,12 +1,15 @@
 {
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "plugins": ["@typescript-eslint"],
   "extends": [
-    "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "next"
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:prettier/recommended"
   ],
   "root": true,
   "env": {
@@ -16,12 +19,19 @@
     "node": true
   },
   "settings": {
-    "react": {
-      "version": "detect"
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   },
   "rules": {
     "react/react-in-jsx-scope": 0,
+    "react/jsx-props-no-spreading": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
