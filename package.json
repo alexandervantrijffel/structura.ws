@@ -23,20 +23,27 @@
     ]
   },
   "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "tailwindcss-filters": "^3.0.0",
+    "xwind": "^0.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@emotion/babel-plugin": "^11.3.0",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.14.25",
     "@types/react": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
+    "autoprefixer": "10.3.3",
     "babel-jest": "^27.0.2",
     "eslint": "^7.19.0",
-    "eslint-config-next": "11.1.0",
+    "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.3",
@@ -44,7 +51,9 @@
     "jest": "^27.0.4",
     "jest-watch-typeahead": "^0.6.1",
     "lint-staged": "^10.0.10",
+    "postcss": "^8.3.6",
     "prettier": "^2.0.2",
+    "tailwindcss": "2.2.8",
     "typescript": "^4.1.3"
   }
 }
