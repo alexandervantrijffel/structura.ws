@@ -28,8 +28,7 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "tailwindcss-filters": "^3.0.0",
-    "xwind": "^0.8.0"
+    "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -42,6 +41,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "autoprefixer": "10.3.3",
     "babel-jest": "^27.0.2",
+    "babel-plugin-twin": "1.0.2",
     "eslint": "^7.19.0",
     "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^7.2.0",
@@ -54,6 +54,12 @@
     "postcss": "^8.3.6",
     "prettier": "^2.0.2",
     "tailwindcss": "2.2.8",
+    "twin.macro": "2.7.0",
     "typescript": "^4.1.3"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   }
 }

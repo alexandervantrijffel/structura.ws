@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import xw from 'xwind'
+import tw from 'twin.macro'
 import ButtonReact from '../components/ButtonReact'
 
 const Home = (): JSX.Element => (
-  <div css={xw`grid justify-center items-center h-screen space-y-20`}>
-    <div css={xw`space-y-20`}>
+  <div css={tw`grid justify-center items-center h-screen space-y-20`}>
+    <div css={tw`space-y-20`}>
       <ButtonReact
         onClick={() => {
           window.alert('Thanks for clicking')

@@ -2,9 +2,10 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   // jit doesn't work with xwind 0.8.0
-  // enable when this issue is resolved
+  // enable and consider xwind instead of twin.macro
+  // when this issue is resolved
   // https://github.com/Arthie/xwind/issues/30
-  //mode: 'jit',
+  mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
@@ -14,7 +15,7 @@ module.exports = {
   },
   variants: {},
   plugins: [require('tailwindcss-filters')],
-  xwind: {
-    mode: 'objectstyles',
-  },
+  // xwind: {
+  //   mode: 'objectstyles',
+  // },
 }
