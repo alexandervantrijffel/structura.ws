@@ -3619,7 +3619,7 @@ jest-validate@^27.1.0:
     leven "^3.1.0"
     pretty-format "^27.1.0"
 
-jest-watch-typeahead@^0.6.1:
+jest-watch-typeahead@^0.6.4:
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/jest-watch-typeahead/-/jest-watch-typeahead-0.6.4.tgz#ea70bf1bec34bd4f55b5b72d471b02d997899c3e"
   integrity sha512-tGxriteVJqonyrDj/xZHa0E2glKMiglMLQqISLCjxLUfeueRBh9VoRF2FKQyYO2xOqrWDTg7781zUejx411ZXA==
